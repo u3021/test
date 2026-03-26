@@ -1,3 +1,11 @@
+<style>
+  body {
+    color:green;
+  }
+  p {
+    color:red;
+  }
+</style>
 <h1>this is test website.</h1>
 <h2>
   <label for="eggs">enter egg here</label>
@@ -17,14 +25,14 @@
 <h2 id="output"></h2>
 <script>
   function eggFunction(){
-    document.getElementById("output").innerHTML = "<h2>yayy!! eggs correct!!!</h2>";
+    document.getElementById("output").innerHTML = "<body><h2>yayy!! eggs correct!!!</h2></body>";
   };
   function eggCheck(){
     var egg = document.getElementById("eggs").value;
     if (egg === "eggs"){
       eggFunction();
     } else {
-      document.getElementById("output").innerHTML = "<h2>incorrect egg.</h2>";
+      document.getElementById("output").innerHTML = "<p><h2>incorrect egg.</h2></p>";
     };
   };
 </script>
