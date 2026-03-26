@@ -17,14 +17,14 @@
 <h2 id="output"></h2>
 <script>
   function eggFunction(){
-    document.getElementById("output").innerHTML = "<h2 style="rgb(0, 255, 0)">yayy!! eggs correct!!!</h2>";
+    document.getElementById("output").innerHTML = "<h2>yayy!! eggs correct!!!</h2>";
   };
   function eggCheck(){
     var egg = document.getElementById("eggs").value;
     if (egg === "eggs"){
       eggFunction();
     } else {
-      document.getElementById("output").innerHTML = "<h2 style="rgb(255, 0, 0);">incorrect egg.</h2>";
+      document.getElementById("output").innerHTML = "<h2>incorrect egg.</h2>";
     };
   };
 </script>
