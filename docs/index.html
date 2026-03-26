@@ -21,9 +21,9 @@ var egg = document.getElementById("eggs");
     document.getElementById("output").innerHTML = "<h2>egg. only egg.</h2>";
   };
   function eggCheck(){
-    var egg = document.getElementById("eggs");
-    if (egg === "eggs"){
-      eggFunction()
+    var egg = document.getElementById("eggs").value;
+    if (egg.value === "eggs"){
+      eggFunction();
     };
   };
 </script>
