@@ -16,8 +16,14 @@
 </h2>
 <h2 id="output"></h2>
 <script>
+var egg = document.getElementById("eggs");
   function eggFunction(){
     document.getElementById("output").innerHTML = "<h2>egg. only egg.</h2>";
   };
+  function eggCheck(){
+    if (egg === eggs){
+      eggFunction()
+    };
+  };
 </script>
-<button onclick="eggFunction()">egg ignite!11!!1!1</button>
+<button onclick="eggCheck()">egg ignite!11!!1!1</button>
