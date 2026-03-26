@@ -24,13 +24,13 @@
 </h2>
 <h2 id="output"></h2>
 <script>
-  function eggFunction(){
-    document.getElementById("output").innerHTML = "<h3>yayy!! eggs correct!!!</h3>";
-  };
   function eggCheck(){
     var egg = document.getElementById("eggs").value;
     if (egg === "eggs"){
-      eggFunction();
+ document.getElementById("output").innerHTML = "<h3>yayy!! eggs correct!!!</h3>";   
+    } else if (egg === "nick"){
+    document.getElementById("output").innerHTML = "<h2>wow. you get secret easter...</h2>
+      <h4>EGGGGGGGGGGGGGGGGGGGGGGGG.</h4>";
     } else {
       document.getElementById("output").innerHTML = "<h4>incorrect egg.</h4>";
     };
